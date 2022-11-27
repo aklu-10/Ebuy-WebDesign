@@ -1,0 +1,114 @@
+@import url("./responsive.css");
+
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+::-webkit-scrollbar
+{
+    width:4px;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: red;
+    border-radius: 10px;
+}
+
+
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.nav-link:hover
+{
+    color:red;
+}
+
+.nav-link.active
+{
+    color:red !important;
+}
+
+.navbar-toggler:focus
+{
+    box-shadow: none;
+}
+
+.carousel_content
+{
+    top:30%;
+    left:15%;
+}
+
+.carousel_content h1
+{
+    font-size: 4rem;
+}
+
+.carousel-indicators button.active
+{ 
+    background-color: red;
+}
+
+.counter
+{
+    font-size: 2rem;
+}
+
+.counter p
+{
+    font-size: 1rem;
+}
+
+
+.products img:hover
+{
+    transform: scale(.8);
+}
+
+.sales_img
+{
+    animation-name: dance ;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes dance{
+
+    25%
+    {
+        transform: scale(.7) rotate(10deg);
+    }
+
+    75%
+    {
+        transform: scale(1) rotate(-10deg);
+
+    }
+    
+}
+
+.sales_banner
+{
+    margin-top: 10%;
+    min-height: 30vh;
+}
+
+.contact input,
+.contact textarea
+{
+    padding: 20px;
+    border:1px solid gray;
+}
+
+.contact textarea
+{
+    resize:none;
+}
