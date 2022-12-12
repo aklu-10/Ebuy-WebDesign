@@ -33,10 +33,10 @@ let Salesinterval=setInterval(function()
 
 let [days,hours,minutes,seconds]=SaleEndsTimer("dec 1 2022");
 
-days<10?_(".counter .days").innerText="0"+days:_(".counter .days").innerText=days;
-hours<10?_(".counter .hours").innerText="0"+hours:_(".counter .hours").innerText=hours;
-minutes<10?_(".counter .minutes").innerText="0"+minutes:_(".counter .minutes").innerText=minutes;
-seconds<10?_(".counter .seconds").innerText="0"+seconds:_(".counter .seconds").innerText=seconds;
+_(".counter .days").innerText=days;
+_(".counter .hours").innerText=hours;
+_(".counter .minutes").innerText=minutes;
+_(".counter .seconds").innerText=seconds;
 
 if(days==0 && hours==0 && minutes==0 && seconds==0)
     {
