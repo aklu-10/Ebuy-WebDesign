@@ -31,7 +31,7 @@ function SaleEndsTimer(EndDate)
 let Salesinterval=setInterval(function()
 {
 
-let [days,hours,minutes,seconds]=SaleEndsTimer("Jan 1 2023");
+let [days,hours,minutes,seconds]=SaleEndsTimer("Mar 1 2023");
 
 _(".counter .days").innerText=days;
 _(".counter .hours").innerText=hours;
